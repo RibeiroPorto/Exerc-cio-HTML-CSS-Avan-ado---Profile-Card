@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --background-color: hsl(185, 75%, 39%);
+    --text-color: hsl(227, 10%, 46%);
+    --card-color: #fff;;
+}
+body {
+    background-color:var(--background-color);
+    height: 100vh;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 18px;
+}
+body .cartao{
+   
+    height: 350px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--card-color);
+
+}
+.cartao .dados-pessoais{
+    
+    flex-grow:7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+
+}
+.cartao .dados-sociais{
+    
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.cartao .dados-pessoais .foto-perfil img{
+    
+    border-radius:100%;
+}
+.cartao .dados-sociais *{
+    text-align: center;
+
+}
+
+.cartao .dados-sociais .quantidade, .cartao .dados-pessoais span{
+    font-weight: 700;
+    color: black;
+    
+
+}
